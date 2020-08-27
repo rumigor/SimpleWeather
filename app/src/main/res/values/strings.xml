@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">SimpleWeather</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="choose_city">Choose city</string>
+    <string name="settings">Settings</string>
+    <string name="wind">Wind:</string>
+    <string name="forecast">forecast</string>
+    <string name="sunrise_time">Sunrise time:</string>
+    <string name="saint_petersburg">Saint-Petersburg</string>
+    <string name="sunset_time">Sunset time:</string>
+    <string name="precepitation">Precepitation</string>
+    <string name="windSD">1 m/s, Eastern</string>
+    <string name="sunriseTime">5:42</string>
+    <string name="sunsetTime">20:16</string>
+    <string name="precepitationInfo">rain</string>
+</resources>
