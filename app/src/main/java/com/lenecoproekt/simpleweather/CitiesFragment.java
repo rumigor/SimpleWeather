@@ -66,13 +66,11 @@ public class CitiesFragment extends Fragment {
     private void initList(View view) {
         LinearLayout layoutView = (LinearLayout) view;
         final String[] cities = getResources().getStringArray(R.array.cities);
-        RadioGroup radioGroup = new RadioGroup(getContext());
         final RadioButton [] radioButtons = new RadioButton[cities.length];
         for (int i = 0; i < cities.length; i++) {
             RadioButton rb = new RadioButton(getContext());
             rb.setText(cities[i]);
             rb.setTextSize(30);
-//            radioGroup.addView(rb);
             radioButtons[i] = rb;
             layoutView.addView(radioButtons[i]);
         }
@@ -106,7 +104,7 @@ public class CitiesFragment extends Fragment {
 
     private void showWeather(String cityN, Weather weather) {
         WeatherFragment weatherFragment = (WeatherFragment) getFragmentManager().findFragmentById(R.id.currentWeather);
-        if (city.equals(cityN)){
+        if (!city.equals(cityN)){
             weatherFragment = WeatherFragment.create(weather, null, cityN);
             FragmentTransaction ft = getFragmentManager().beginTransaction();
             ft.replace(R.id.currentWeather, weatherFragment);  // замена фрагмента
